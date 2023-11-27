@@ -1,0 +1,341 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "2023_2C_PP",
+    "dateExported": "2023-10-08T23:46:40.154Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "adabdf13-4456-4f43-aa52-4ee763e07b7d",
+            "colId": "a26f0efb-5a8e-4a15-885d-d676ce7ac604",
+            "containerId": "",
+            "name": "01-altaAutoJSON",
+            "url": "http://localhost/prog_3/altaAutoJSON.php",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-10-08T23:36:10.728Z",
+            "modified": "2023-10-08T23:37:09.303Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "patente",
+                        "value": "abc123"
+                    },
+                    {
+                        "name": "marca",
+                        "value": "fiat"
+                    },
+                    {
+                        "name": "color",
+                        "value": "negro"
+                    },
+                    {
+                        "name": "precio",
+                        "value": "252900"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "887c1384-1e61-4243-801b-3c98b501eed6",
+            "colId": "a26f0efb-5a8e-4a15-885d-d676ce7ac604",
+            "containerId": "",
+            "name": "02-verificarAutoJSON",
+            "url": "http://localhost/prog_3/verificarAutoJSON.php",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-10-08T23:36:10.729Z",
+            "modified": "2023-10-08T23:37:31.790Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "patente",
+                        "value": "abc123"
+                    },
+                    {
+                        "name": "patente",
+                        "value": "noexiste",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "5fa80aeb-e3a5-422c-aa7d-fc8442926edc",
+            "colId": "a26f0efb-5a8e-4a15-885d-d676ce7ac604",
+            "containerId": "",
+            "name": "03-listadoAutosJSON",
+            "url": "http://localhost/prog_3/listadoAutosJSON.php",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-10-08T23:36:10.730Z",
+            "modified": "2023-10-08T23:37:55.008Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a65e1469-aafb-4aa8-a6ae-a998c3f06517",
+            "colId": "a26f0efb-5a8e-4a15-885d-d676ce7ac604",
+            "containerId": "",
+            "name": "04-agregarAutoSinFoto",
+            "url": "http://localhost/prog_3/agregarAutoSinFoto.php",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-10-08T23:36:10.731Z",
+            "modified": "2023-10-08T23:38:11.476Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "auto_json",
+                        "value": "{\"patente\":\"abc123\",\"marca\":\"ford\", \"color\":\"rojo\", \"precio\":133000}"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "4389148b-d9cd-4283-9ffe-a08caacbb5d5",
+            "colId": "a26f0efb-5a8e-4a15-885d-d676ce7ac604",
+            "containerId": "",
+            "name": "05-listadoAutosBD",
+            "url": "http://localhost/prog_3/listadoAutosBD.php",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-10-08T23:36:10.732Z",
+            "modified": "2023-10-08T23:38:23.816Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "31c319d4-7c58-464c-9836-fc31ccb691e8",
+            "colId": "a26f0efb-5a8e-4a15-885d-d676ce7ac604",
+            "containerId": "",
+            "name": "06-eliminarAutoBD",
+            "url": "http://localhost/prog_3/eliminarAutoBD.php",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-10-08T23:36:10.733Z",
+            "modified": "2023-10-08T23:38:38.504Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "auto_json",
+                        "value": "{\"patente\":\"abc123\",\"marca\":\"fiat\",\"color\":\"blanco\", \"precio\":100555}"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f12369ec-f0da-40fc-967a-a0b60794af95",
+            "colId": "a26f0efb-5a8e-4a15-885d-d676ce7ac604",
+            "containerId": "",
+            "name": "07-modificarAutoBD",
+            "url": "http://localhost/prog_3/modificarAutoBD.php",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-10-08T23:36:10.734Z",
+            "modified": "2023-10-08T23:38:59.038Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "auto_json",
+                        "value": "{\"patente\":\"abc123\",\"marca\":\"fiat\",\"color\":\"blanco\", \"precio\":100555}"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "244748ca-1e4e-4f8d-8e69-c116e28276ca",
+            "colId": "a26f0efb-5a8e-4a15-885d-d676ce7ac604",
+            "containerId": "",
+            "name": "08-verificarAutoBD",
+            "url": "http://localhost/prog_3/verificarAutoBD.php",
+            "method": "POST",
+            "sortNum": 82500,
+            "created": "2023-10-08T23:36:10.735Z",
+            "modified": "2023-10-08T23:39:15.454Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "obj_auto",
+                        "value": "{\"patente\":\"AYF714\"}"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "557dd8e0-2ea4-472c-9d37-883ecd6370be",
+            "colId": "a26f0efb-5a8e-4a15-885d-d676ce7ac604",
+            "containerId": "",
+            "name": "09-agregarAutoBD",
+            "url": "http://localhost/prog_3/agregarAutoBD.php",
+            "method": "POST",
+            "sortNum": 85000,
+            "created": "2023-10-08T23:36:10.736Z",
+            "modified": "2023-10-08T23:40:31.785Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "patente",
+                        "value": "AA888CC"
+                    },
+                    {
+                        "name": "marca",
+                        "value": "Citroen"
+                    },
+                    {
+                        "name": "color",
+                        "value": "Blanco"
+                    },
+                    {
+                        "name": "precio",
+                        "value": "3000666"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "foto",
+                        "value": "c:\\Users\\maxin\\OneDrive\\Imágenes\\hotwheels.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "dc9c73af-ce35-497b-8edb-6c8591065c7b",
+            "colId": "a26f0efb-5a8e-4a15-885d-d676ce7ac604",
+            "containerId": "",
+            "name": "10-eliminarAutoBD__POST",
+            "url": "http://localhost/prog_3/eliminarAutoBDFoto.php",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2023-10-08T23:36:10.737Z",
+            "modified": "2023-10-08T23:40:47.384Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "auto_json",
+                        "value": "{\"patente\":\"abc123\",\"marca\":\"fiat\",\"color\":\"blanco\", \"precio\":100555,\"pathFoto\":\".\\/abc123.233148.jpg\"}"
+                    },
+                    {
+                        "name": "accion",
+                        "value": "borrar",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "d27311c9-3182-4392-8414-cbfa0972363b",
+            "colId": "a26f0efb-5a8e-4a15-885d-d676ce7ac604",
+            "containerId": "",
+            "name": "11-eliminarAutoBD__GET",
+            "url": "http://localhost/prog_3/eliminarAutoBDFoto.php",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2023-10-08T23:36:10.738Z",
+            "modified": "2023-10-08T23:41:01.431Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0db55828-25f2-42f8-ac57-d1fbc14663c2",
+            "colId": "a26f0efb-5a8e-4a15-885d-d676ce7ac604",
+            "containerId": "",
+            "name": "12-modificarAutoBDFoto__POST",
+            "url": "http://localhost/prog_3/modificarAutoDBFoto.php",
+            "method": "POST",
+            "sortNum": 123750,
+            "created": "2023-10-08T23:36:10.739Z",
+            "modified": "2023-10-08T23:41:33.745Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "auto_json",
+                        "value": "{\"patente\":\"abc123\",\"marca\":\"ford_modif\", \"color\":\"rojo_modif\", \"precio\":1}"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "foto",
+                        "value": "c:\\Users\\maxin\\OneDrive\\Imágenes\\koala.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "bf6381c3-b27b-44de-97d8-54898a62da50",
+            "colId": "a26f0efb-5a8e-4a15-885d-d676ce7ac604",
+            "containerId": "",
+            "name": "13-modificarAutoBDFoto__GET",
+            "url": "http://localhost/prog_3/modificarAutoBDFoto.php",
+            "method": "GET",
+            "sortNum": 127500,
+            "created": "2023-10-08T23:36:10.740Z",
+            "modified": "2023-10-08T23:41:41.829Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "cd59b49c-f899-42fd-95c3-155f160eb47b",
+            "colId": "a26f0efb-5a8e-4a15-885d-d676ce7ac604",
+            "containerId": "",
+            "name": "14-listadoAutosPDF",
+            "url": "http://localhost/prog_3/listadoAutosPDF.php",
+            "method": "GET",
+            "sortNum": 137500,
+            "created": "2023-10-08T23:41:50.219Z",
+            "modified": "2023-10-08T23:43:43.123Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

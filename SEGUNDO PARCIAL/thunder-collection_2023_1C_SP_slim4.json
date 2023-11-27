@@ -1,0 +1,303 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "2023_1C_SP_slim4",
+    "dateExported": "2023-06-25T23:09:34.353Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "3f4c4d29-9ec4-46a1-b4c0-26111862848f",
+            "colId": "12920f68-d000-476a-9bc1-a6263d0030f9",
+            "containerId": "",
+            "name": "listado usuarios",
+            "url": "http://prog_3_sp/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-06-25T22:54:21.333Z",
+            "modified": "2023-06-25T22:58:44.231Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "apellido",
+                    "value": "schelotto",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "35335eb0-34af-4733-94aa-949d0ff65ed4",
+            "colId": "12920f68-d000-476a-9bc1-a6263d0030f9",
+            "containerId": "",
+            "name": "alta juguete",
+            "url": "http://prog_3_sp/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-06-25T22:54:21.352Z",
+            "modified": "2023-06-25T23:00:13.681Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "juguete_json",
+                        "value": "{\"marca\":\"avion\", \"precio\":\"6500\"}"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "foto",
+                        "value": "c:\\Users\\Maxi\\Pictures\\avion.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "21c7acd1-6273-43cf-aeac-4a2e7c9ae0c9",
+            "colId": "12920f68-d000-476a-9bc1-a6263d0030f9",
+            "containerId": "",
+            "name": "listado juguetes",
+            "url": "http://prog_3_sp/juguetes",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-06-25T22:54:21.353Z",
+            "modified": "2023-06-25T23:01:22.873Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a66e1694-04ce-439d-a990-de50d70e9fc6",
+            "colId": "12920f68-d000-476a-9bc1-a6263d0030f9",
+            "containerId": "",
+            "name": "login - crear jwt",
+            "url": "http://prog_3_sp/login",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-06-25T22:54:21.354Z",
+            "modified": "2023-06-25T23:02:14.543Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "user",
+                        "value": "{\"correo\":\"prop@prop.com\", \"clave\":\"123456\"}"
+                    },
+                    {
+                        "name": "user",
+                        "value": "{\"correo\":\"\", \"clave\":\"\"}",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "user",
+                        "value": "{\"correo\":\"algo\", \"clave\":\"\"}",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "user",
+                        "value": "{\"correo\":\"\", \"clave\":\"123\"}",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "user",
+                        "value": "{\"correo\":\"no@existe.com\", \"clave\":\"1234\"}",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "user",
+                        "value": "{\"correo\":\"super@super.com \", \"clave\":\"123456\"}",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "user",
+                        "value": "{\"correo\":\"emple@emple.com\", \"clave\":\"123456\"}",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "1032650a-4f91-48eb-a50b-774bc63ea880",
+            "colId": "12920f68-d000-476a-9bc1-a6263d0030f9",
+            "containerId": "",
+            "name": "login - verificar jwt",
+            "url": "http://prog_3_sp/login",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-06-25T22:54:21.355Z",
+            "modified": "2023-06-25T23:02:33.060Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Njg5Nzc5MDQsImV4cCI6MTY2ODk3ODAyNCwiYXVkIjoie1wiaXBfdmlzaXRhbnRlXCI6XCIxMjcuMC4wLjFcIixcInVzZXJfYWdlbnRcIjpcIlRodW5kZXIgQ2xpZW50IChodHRwczpcXFwvXFxcL3d3dy50aHVuZGVyY2xpZW50LmNvbSlcIixcImhvc3RfbmFtZVwiOlwiTEFQVE9QLUVGR1VWSDBPXCJ9IiwidXN1YXJpbyI6eyJjb3JyZW8iOiJzdXBlckBzdXBlci5jb20iLCJjbGF2ZSI6IjEyMzQ1NiIsIm5vbWJyZSI6InN1cGVyIiwiYXBlbGxpZG8iOiJ2aXNvciIsInBlcmZpbCI6InN1cGVydmlzb3IiLCJmb3RvIjoiLlwvLi5cL2ZvdG9zXC9zdXBlckBzdXBlci5jb20uanBnIn0sImFsdW1ubyI6eyJub21icmUiOiJGcmFuY28iLCJBcGVsbGlkbyI6IkJ1b25mcmF0ZSJ9LCJwYXJjaWFsIjp7InBhcmNpYWwiOiJTZWd1bmRvIFBhcmNpYWwifX0.r47TwuE7khMYKHyn07uluFo6cD3SUd3c08O1Tlp2g4I"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "394888e2-f83f-4828-982b-d103f3bc3df6",
+            "colId": "12920f68-d000-476a-9bc1-a6263d0030f9",
+            "containerId": "",
+            "name": "borrar juguete",
+            "url": "http://prog_3_sp/toys/912",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2023-06-25T22:54:21.356Z",
+            "modified": "2023-06-25T23:04:42.588Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Njg5Nzc5MDQsImV4cCI6MTY2ODk3ODAyNCwiYXVkIjoie1wiaXBfdmlzaXRhbnRlXCI6XCIxMjcuMC4wLjFcIixcInVzZXJfYWdlbnRcIjpcIlRodW5kZXIgQ2xpZW50IChodHRwczpcXFwvXFxcL3d3dy50aHVuZGVyY2xpZW50LmNvbSlcIixcImhvc3RfbmFtZVwiOlwiTEFQVE9QLUVGR1VWSDBPXCJ9IiwidXN1YXJpbyI6eyJjb3JyZW8iOiJzdXBlckBzdXBlci5jb20iLCJjbGF2ZSI6IjEyMzQ1NiIsIm5vbWJyZSI6InN1cGVyIiwiYXBlbGxpZG8iOiJ2aXNvciIsInBlcmZpbCI6InN1cGVydmlzb3IiLCJmb3RvIjoiLlwvLi5cL2ZvdG9zXC9zdXBlckBzdXBlci5jb20uanBnIn0sImFsdW1ubyI6eyJub21icmUiOiJGcmFuY28iLCJBcGVsbGlkbyI6IkJ1b25mcmF0ZSJ9LCJwYXJjaWFsIjp7InBhcmNpYWwiOiJTZWd1bmRvIFBhcmNpYWwifX0.r47TwuE7khMYKHyn07uluFo6cD3SUd3c08O1Tlp2g4I"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "336311b3-10ad-4167-abc5-10a2dd09986b",
+            "colId": "12920f68-d000-476a-9bc1-a6263d0030f9",
+            "containerId": "",
+            "name": "modificar juguete",
+            "url": "http://prog_3_sp/toys/",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-06-25T22:54:21.357Z",
+            "modified": "2023-06-25T23:05:23.392Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Njg5Nzc5MDQsImV4cCI6MTY2ODk3ODAyNCwiYXVkIjoie1wiaXBfdmlzaXRhbnRlXCI6XCIxMjcuMC4wLjFcIixcInVzZXJfYWdlbnRcIjpcIlRodW5kZXIgQ2xpZW50IChodHRwczpcXFwvXFxcL3d3dy50aHVuZGVyY2xpZW50LmNvbSlcIixcImhvc3RfbmFtZVwiOlwiTEFQVE9QLUVGR1VWSDBPXCJ9IiwidXN1YXJpbyI6eyJjb3JyZW8iOiJzdXBlckBzdXBlci5jb20iLCJjbGF2ZSI6IjEyMzQ1NiIsIm5vbWJyZSI6InN1cGVyIiwiYXBlbGxpZG8iOiJ2aXNvciIsInBlcmZpbCI6InN1cGVydmlzb3IiLCJmb3RvIjoiLlwvLi5cL2ZvdG9zXC9zdXBlckBzdXBlci5jb20uanBnIn0sImFsdW1ubyI6eyJub21icmUiOiJGcmFuY28iLCJBcGVsbGlkbyI6IkJ1b25mcmF0ZSJ9LCJwYXJjaWFsIjp7InBhcmNpYWwiOiJTZWd1bmRvIFBhcmNpYWwifX0.r47TwuE7khMYKHyn07uluFo6cD3SUd3c08O1Tlp2g4I"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "juguete",
+                        "value": "{\"id_juguete\":912,\"marca\":\"marca_modif\",\"precio\":666}"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "foto",
+                        "value": "C:\\Users\\Maxi\\Pictures\\2018.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "874d03c3-aa57-40bd-a554-9ae230725a53",
+            "colId": "12920f68-d000-476a-9bc1-a6263d0030f9",
+            "containerId": "",
+            "name": "tablas - usuarios",
+            "url": "http://prog_3_sp/tablas/usuarios",
+            "method": "GET",
+            "sortNum": 85000,
+            "created": "2023-06-25T22:54:21.359Z",
+            "modified": "2023-06-25T23:06:47.616Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "56276b7c-3eff-4bb4-91d5-c46bf78ef0de",
+            "colId": "12920f68-d000-476a-9bc1-a6263d0030f9",
+            "containerId": "",
+            "name": "tablas - usuarios - prop",
+            "url": "http://prog_3_sp/tablas/usuarios",
+            "method": "POST",
+            "sortNum": 87500,
+            "created": "2023-06-25T22:54:21.360Z",
+            "modified": "2023-06-25T23:06:58.980Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Njg5NzgwNzYsImV4cCI6MTY2ODk3ODE5NiwiYXVkIjoie1wiaXBfdmlzaXRhbnRlXCI6XCIxMjcuMC4wLjFcIixcInVzZXJfYWdlbnRcIjpcIlRodW5kZXIgQ2xpZW50IChodHRwczpcXFwvXFxcL3d3dy50aHVuZGVyY2xpZW50LmNvbSlcIixcImhvc3RfbmFtZVwiOlwiTEFQVE9QLUVGR1VWSDBPXCJ9IiwidXN1YXJpbyI6eyJjb3JyZW8iOiJwcm9wQHByb3AuY29tIiwiY2xhdmUiOiIxMjM0NTYiLCJub21icmUiOiJwcm9waWUiLCJhcGVsbGlkbyI6InRhcmlvIiwicGVyZmlsIjoicHJvcGlldGFyaW8iLCJmb3RvIjoiLlwvLi5cL2ZvdG9zXC9wcm9wQHByb3AuY29tLmpwZyJ9LCJhbHVtbm8iOnsibm9tYnJlIjoiRnJhbmNvIiwiQXBlbGxpZG8iOiJCdW9uZnJhdGUifSwicGFyY2lhbCI6eyJwYXJjaWFsIjoiU2VndW5kbyBQYXJjaWFsIn19.FuWrnW0wych4odqi8GfErUQdjD9QfyTgBOiHt0lZQgo"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fcb04463-8a17-4196-a2f5-6daf784f8489",
+            "colId": "12920f68-d000-476a-9bc1-a6263d0030f9",
+            "containerId": "",
+            "name": "tablas - juguetes",
+            "url": "http://prog_3_sp/tablas/juguetes",
+            "method": "GET",
+            "sortNum": 88750,
+            "created": "2023-06-25T22:54:21.361Z",
+            "modified": "2023-06-25T23:08:14.754Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2Njg5NzgwNzYsImV4cCI6MTY2ODk3ODE5NiwiYXVkIjoie1wiaXBfdmlzaXRhbnRlXCI6XCIxMjcuMC4wLjFcIixcInVzZXJfYWdlbnRcIjpcIlRodW5kZXIgQ2xpZW50IChodHRwczpcXFwvXFxcL3d3dy50aHVuZGVyY2xpZW50LmNvbSlcIixcImhvc3RfbmFtZVwiOlwiTEFQVE9QLUVGR1VWSDBPXCJ9IiwidXN1YXJpbyI6eyJjb3JyZW8iOiJwcm9wQHByb3AuY29tIiwiY2xhdmUiOiIxMjM0NTYiLCJub21icmUiOiJwcm9waWUiLCJhcGVsbGlkbyI6InRhcmlvIiwicGVyZmlsIjoicHJvcGlldGFyaW8iLCJmb3RvIjoiLlwvLi5cL2ZvdG9zXC9wcm9wQHByb3AuY29tLmpwZyJ9LCJhbHVtbm8iOnsibm9tYnJlIjoiRnJhbmNvIiwiQXBlbGxpZG8iOiJCdW9uZnJhdGUifSwicGFyY2lhbCI6eyJwYXJjaWFsIjoiU2VndW5kbyBQYXJjaWFsIn19.FuWrnW0wych4odqi8GfErUQdjD9QfyTgBOiHt0lZQgo"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d36ee400-1441-4605-9088-e38701387854",
+            "colId": "12920f68-d000-476a-9bc1-a6263d0030f9",
+            "containerId": "",
+            "name": "alta usuarios",
+            "url": "http://prog_3_sp/usuarios",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-06-25T22:54:21.362Z",
+            "modified": "2023-06-25T23:08:41.584Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "usuario",
+                        "value": "{\"correo\":\"juan@fer.com.co\", \"clave\":\"123456\", \"nombre\":\"juanfer\", \"apellido\":\"quintero\", \"perfil\":\"propietario\"}"
+                    },
+                    {
+                        "name": "usuario",
+                        "value": "{\"correo\":\"\", \"clave\":\"\"}",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "usuario",
+                        "value": "{\"correo\":\"algo\", \"clave\":\"\"}",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "usuario",
+                        "value": "{\"correo\":\"\", \"clave\":\"123\"}",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "usuario",
+                        "value": "{\"correo\":\"prop@prop.com\", \"clave\":\"1234\"}",
+                        "isDisabled": true
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "foto",
+                        "value": "C:\\Users\\Maxi\\Pictures\\enzo_2021.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ]
+}
