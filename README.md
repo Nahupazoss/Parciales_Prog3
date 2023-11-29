@@ -1,10 +1,6 @@
 # Parciales_prog3
-back-end prog 3
-
-# Primer Parcial 
-
+Primer Parcial 
 Aprobado con 6
 
-# Segundo parcial
-
+Segundo parcial
 Aprobado con 9
